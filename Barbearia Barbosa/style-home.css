@@ -1,0 +1,161 @@
+header {
+	background: url("bg.jpg");
+	padding: 20px 0;	
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+.caixa img{
+	max-width: 250px;
+	max-height: 250px;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #bb9469;
+    text-decoration: underline;
+}
+.banner {
+	width: 100%;
+}
+.principal{
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
+	background: #ffffff;
+}
+.principal p {
+	margin: 0 0 1em;
+}
+
+.titulo-principal {
+	font-weight: bold;
+	text-align: center;
+	padding-left: 20px;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.img-utensilios {
+	text-align: center;
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+em strong {
+	color: black;
+	font-weight: bold;
+}
+p strong {
+	font-weight: bold;
+}
+.beneficios {
+	text-align: center;
+	background: #888888;
+}
+
+.img-beneficios {
+	width: 30%;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px;
+}
+
+.img-beneficios:hover{
+	opacity: 0.6;
+}
+.lista-itens {
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+.itens {
+	line-height: 1.5em;	
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE,#888888);
+}
+.mapa-conteudo{
+	width: 940px;
+	margin: 0 auto;
+}
+.mapa p {
+	padding: 2em 0 1em;
+	text-align: center;
+}
+
+.titulo-mapa {
+	font-size: 25px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.itens:before{
+	content: "★ ";
+}
+
+.video {
+	padding: 2em 0;
+	text-align: center;
+	padding-bottom: 2em;
+	background: #888888;
+}
+.foot  img{
+    max-width: 150px;
+    max-height: 250px;
+}
+
+footer {
+    text-align: center;
+    background-image: url("bg.jpg");
+    padding: 35px;
+}
+.copyright {
+	color: #ffffff;
+	font-size: 13px;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 480px){
+	.caixa, .principal, .mapa-conteudo, .video{
+		width: auto;
+	}
+	h1{
+		text-align: center;
+	}
+	nav {
+		position: static;
+	}
+
+	.beneficios, .img-beneficios{
+		width: 100%;
+	}
+
+	.img-beneficios{
+		padding-top: 2em;
+	}
+}
