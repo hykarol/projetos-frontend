@@ -5,7 +5,5 @@
 * Estou sempre disponível a aprender mais.
 * Se você é um recrutador olhando estes arquivos, obrigado por dispor do seu tempo.
 
-
-
-                                          ### 								Atenciosamente !
+  ​													Atenciosamente !
 
