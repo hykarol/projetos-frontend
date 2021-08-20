@@ -1,19 +1,19 @@
 import{ Cliente } from "./Cliente.js"
 import { ContaCorrente } from "./ContaCorrente.js";
+import { ContaPoupanca } from "./ContaPoupanca.js";
 
 //Cadastro clientes
-const cliente1 = new Cliente('Climaco',19985352118);
-console.log(cliente1);
+const cliente1 = new Cliente('Luan',19985352118);
 
-const cliente2 = new Cliente('Noemia', 15485652218);
-console.log(cliente2);
 
 //Cadastro conta-corrente
-const contaCorrenteClimaco = new ContaCorrente(1001,cliente1);
-contaCorrenteClimaco.depositar(1000);
+const contaCorrenteLuan = new ContaCorrente(cliente1, 1001);
 
-const contaCorrenteNoemia = new ContaCorrente(1001, cliente2);
-let valor = 500;
-contaCorrenteClimaco.transferir(valor,contaCorrenteNoemia);
+const contaPoupanca = new ContaPoupanca(1000, cliente1, 1001);
 
-console.log(ContaCorrente.numeroDeContas);
+contaCorrenteLuan.depositar(500)
+
+contaCorrenteLuan.sacar(100);
+contaPoupanca.sacar(100);
+console.log(contaCorrenteLuan);
+console.log(contaPoupanca);
